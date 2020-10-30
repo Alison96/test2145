@@ -7,5 +7,5 @@ organization: "Alison96"
 token: "41aaa81b8779210ae99957e6fd6b120aab18d89d"
  script:
 - ant build
-+ - sonar-scanner -Dsonar.projectKey=test2145 -Dsonar.organization=Alison96-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_LOGIN -Dsonar.exclusions=tests/**            -Dsonar.java.coverage.reportPath=coverage.xml
-+ - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sonar-scanner -Dsonar.projectKey=test2145 -Dsonar.organization=Alison96-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_LOGIN -Dsonar.exclusions=tests/** -Dsonar.java.coverage.reportPath=coverage.xml; fi'
+  sonar-scanner -Dsonar.projectKey=test2145 -Dsonar.organization=Alison96-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_LOGIN -Dsonar.exclusions=tests/**            -Dsonar.java.coverage.reportPath=coverage.xml
+ 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sonar-scanner -Dsonar.projectKey=test2145 -Dsonar.organization=Alison96-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_LOGIN -Dsonar.exclusions=tests/** -Dsonar.java.coverage.reportPath=coverage.xml; fi'
