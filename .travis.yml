@@ -7,4 +7,5 @@ organization: "Alison96"
 token: "41aaa81b8779210ae99957e6fd6b120aab18d89d"
 script:
    - ant build
-   - sonar-runner
+directory:
+   -sonar-scanner
